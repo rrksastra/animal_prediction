@@ -11,7 +11,7 @@ st.title("🐾 Animal Detection")
 st.caption("Upload an animal image")
 
 # Load model
-model = tf.keras.models.load_model("model.keras")
+model = tf.keras.models.load_model("model.keras", compile=False)
 classes = ["kutya", "lepke", "tyuk"]
 
 # Upload
